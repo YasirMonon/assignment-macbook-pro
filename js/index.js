@@ -1,4 +1,4 @@
-/*===================================== using function to update all prices =====================================*/
+/*=========================== using function to update all prices ===========================*/
 
 function updatePrice(featureId, price) {
     const featureCost = document.getElementById(featureId);
@@ -24,7 +24,8 @@ document.getElementById('memory-16GB').addEventListener('click', function () {
     updatePrice('memory-cost', 180);
 })
 
-/*===================================== storage (ssd) cost =====================================*/
+
+/*================================== storage (ssd) cost ==================================*/
 
 document.getElementById('storage-256GB').addEventListener('click', function () {
     updatePrice('storage-cost', 0);
@@ -36,7 +37,9 @@ document.getElementById('storage-1TB').addEventListener('click', function () {
     updatePrice('storage-cost', 180);
 })
 
+
 /*===================================== delivery cost =====================================*/
+
 document.getElementById('delivery-free').addEventListener('click', function () {
     updatePrice('delivery-cost', 0);
 })
@@ -45,7 +48,8 @@ document.getElementById('delivery-20').addEventListener('click', function () {
 })
 
 
-/*===================================== promo (discount) code =====================================*/
+/*================================== promo (discount) code ==================================*/
+
 document.getElementById('promo-button').addEventListener('click', function () {
     const promoCode = document.getElementById('promo-input');
     const enteredPromocode = promoCode.value;
@@ -57,9 +61,21 @@ document.getElementById('promo-button').addEventListener('click', function () {
         document.getElementById("promo-button").disabled = true;
         promoCode.value = '';
     }
-
-    /*===================================== promo code - error handling =====================================*/
+    /*============================== promo code - error handling =============================*/
     else {
         alert("Sorry !! Wrong Promo Code !!");
     }
 })
+
+
+
+
+
+
+
+
+/*============== if any problem occurs, requesting to visit my netlify live link below ===========
+
+============================= https://assignment-macbook.netlify.app/ ============================
+
+======================= thanks a lot for your precious time , best regards ========================*/
