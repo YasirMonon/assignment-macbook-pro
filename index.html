@@ -15,7 +15,7 @@
     <!-- tailwind link -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-    <!-- -- custom css  -- -->
+    <!-- -- custom / plain css  -- -->
     <link rel="stylesheet" href="/styles/style.css">
 
 </head>
@@ -30,62 +30,67 @@
             <!-- mac-book-purchase part starts-->
             <div class="col-7">
                 <!-- product-heading -->
-                <h1 class="text-4xl">Customize your Blue24-inch <br> i-Mac with Apple M1 chip.</h1>
-                <p class="mt-1">Apple M1 chip 8-core CPU with 4 performance cores and 4 efficiency cores,7-core GPU and
-                    16-core NeuralNeural engine 8GB unified memory 256GB SSD storage Two thunderbolt.</p>
+                <h1 class="text-4xl font-semibold">Customize your Blue24-inch <br> <span
+                        class="special-color">i-Mac</span>
+                    with <span class="special-color">Apple M1 chip</span>.</h1>
+                <p class="mt-1 text-justify">Apple M1 chip 8-core CPU with 4 performance cores and 4 efficiency
+                    cores,7-core GPU, and
+                    16-core Neural Engine 8GB unified memory 256GB SSD storage Two thunderbolt / USB 4 ports Magic
+                    Mouse Magic Keyboard - US English.</p>
                 <!-- memory option part -->
                 <div class="mt-5">
                     <h1 class="fw-bold mb-2">Memory</h1>
-                    <button id="memory-8GB" class="btn btn-outline-dark px-2">8GB unified memory</button>
-                    <button id="memory-16GB" class="btn btn-outline-dark px-2">16GB unified memory</button>
+                    <button id="memory-8GB" class="btn border-2 btn-outline-dark px-2">8GB Unified Memory</button>
+                    <button id="memory-16GB" class="btn border-2 btn-outline-dark px-2">16GB Unified Memory</button>
                 </div>
                 <!-- storage (ssd) option part -->
                 <div class="mt-5 w-3/4">
                     <h1 class="fw-bold mb-2">Storage</h1>
-                    <button id="storage-256GB" class="btn btn-outline-dark px-2">256GB SSD Storage</button>
-                    <button id="storage-512GB" class="btn btn-outline-dark px-2">512GB SSD Storage</button>
-                    <button id="storage-1TB" class="btn btn-outline-dark px-2">1TB SSD Storage</button>
+                    <button id="storage-256GB" class="btn border-2 btn-outline-dark px-2">256GB SSD Storage</button>
+                    <button id="storage-512GB" class="btn border-2 btn-outline-dark px-2">512GB SSD Storage</button>
+                    <button id="storage-1TB" class="btn border-2 btn-outline-dark px-2">1TB SSD Storage</button>
                 </div>
                 <!-- delivery option part -->
                 <div class="mt-5">
-                    <h1 class="fw-bold mb-2">Choose your delivery option</h1>
-                    <button id="delivery-free" class="btn btn-outline-dark px-2">Friday,AUG 25 FREE Prime
+                    <h1 class="fw-bold mb-2">Choose Your Desired Delivery Option</h1>
+                    <button id="delivery-free" class="btn border-2 btn-outline-dark px-2">Wednesday,AUG 25 FREE Prime
                         Delivery</button>
-                    <button id="delivery-20" class="btn btn-outline-dark px-2">Friday,AUG 21 Delivery charge
+                    <button id="delivery-20" class="btn border-2 btn-outline-dark px-2">Friday,AUG 21 Delivery charge
                         $20</button>
                 </div>
-                <!-- prices (subtotal , total) part -->
+                <!-- prices (subtotal / total) part -->
                 <div class="w-1/2 mt-10 fw-bold">
                     <div class="row">
-                        <div class="col-8">Best price</div>
+                        <div class="col-8">Best Price</div>
                         <div class="col-4">$<span id="best-price">1299</span></div>
                     </div>
                     <hr class="my-2">
                     <div class="row">
-                        <div class="col-8">Extra Memory cost</div>
+                        <div class="col-8">Extra Memory Cost</div>
                         <div class="col-4">$<span id="memory-cost">0</span></div>
                     </div>
                     <hr class="my-2">
                     <div class="row">
-                        <div class="col-8">Extra Storage cost </div>
+                        <div class="col-8">Extra Storage Cost </div>
                         <div class="col-4">$<span id="storage-cost">0</span></div>
                     </div>
                     <hr class="my-2">
                     <div class="row">
-                        <div class="col-8">Delivery charge</div>
+                        <div class="col-8">Delivery Charge</div>
                         <div class="col-4">$<span id="delivery-cost">0</span></div>
                     </div>
                     <div class="border-1 border-black my-2"></div>
                     <div class="row">
-                        <div class="col-8">Total price</div>
+                        <div class="col-8">Total Price</div>
                         <div class="col-4">$<span id="total-price">1299</span></div>
                     </div>
                     <hr class="my-2">
                 </div>
                 <!-- promo code (coupon) part -->
-                <h5 class="mt-4 fw-bolder">Add promo code</h5>
-                <input type="text" id="promo-input" class="border-1 border-black px-4 py-1 my-2">
-                <button id="promo-button" class="btn btn-danger text-white py-2 px-4 fw-bolder">Apply</button>
+                <h5 class="mt-4 fw-bolder">Add Promo Code</h5>
+                <input type="text" id="promo-input" class="border-2 border-black px-2 py-1 my-2 rounded">
+                <button id="promo-button" class="btn btn-danger text-white py-2 px-4 fw-bolder rounded">Apply
+                    Code</button>
             </div>
             <!-- total (final price after discount) part -->
             <div class="mt-2">

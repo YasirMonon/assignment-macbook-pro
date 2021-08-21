@@ -1,5 +1,11 @@
+/* custom / plain css */
+
 .container {
     margin-left: 150px;
     margin-right: 100px;
     margin-top: 10px;
+}
+/* span color of product description */
+.special-color{
+    color: rgb(243, 74, 7);
 }
